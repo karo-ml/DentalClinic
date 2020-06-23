@@ -1,0 +1,578 @@
+* {
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: both;
+}
+
+body {
+  font-family: Verdana, Arial, Helvetica, meirio, メイリオ, "Hiragino Maru Gothic Pro", "ヒラギノ丸ゴ Pro W4", Osaka, "ＭＳ Ｐゴシック", sans-serif;
+  border-top: 7px solid mediumTurquoise;
+  background-color: whiteSmoke;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 920px;
+  margin: 0 auto;
+}
+
+/*-- ========== header ========== --*/
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.header-left {
+  padding-top: 50px;
+}
+
+.header-left img {
+  width: 250px;
+}
+
+.header-right {
+  color: dimGray;
+}
+
+.clinic-title {
+  font-size: 10px;
+  font-weight: normal;
+  margin: 15px 0px 20px 0px;
+}
+
+.tel {
+  margin-bottom: 10px;
+}
+
+.tel p {
+  font-size: 25px;
+}
+
+.tel span {
+  margin-right: 20px;
+}
+
+.tel-time p {
+  font-size: 10px;
+  border: solid 1px darkGray;
+  padding: 10px 20px;
+}
+
+.tel-time span {
+  color: red;
+}
+
+.header-navi ul {
+  display: flex;
+}
+
+.header-navi li {
+  list-style: none;
+  flex: 1 1 20%;
+  text-align: center;
+  margin-right: 0.1px;
+  overflow: hidden;
+  border: solid turquoise 1px;
+  background: linear-gradient(powderBlue,mediumTurquoise);
+}
+
+.header-navi a {
+  display: block;
+  padding: 20px 0;
+}
+
+.header-navi p {
+  color: white;
+  font-weight: bold;
+}
+
+.subtitle-jp {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.subtitle-en {
+  font-size: 10px;
+}
+
+.header-navi li:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.header-navi li:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.header-navi a:hover {
+  background: linear-gradient(mediumTurquoise,powderBlue);
+  opacity: 0.7;
+}
+
+.toppage-margin {
+  margin-bottom: 20px;
+}
+
+/*-- ========== breadcrumb ========== --*/
+
+.breadcrumb {
+  margin: 15px 0;
+}
+
+.breadcrumb ol {
+  list-style: none;
+  color: dimGray;
+  padding-left: 4px;
+}
+
+.breadcrumb li {
+  display: inline-block;
+  font-size: 10px;
+}
+
+.breadcrumb li::after {
+  content: ">";
+}
+
+.breadcrumb li:last-child::after {
+  content: none;
+}
+
+.breadcrumb span {
+  color: royalBlue;
+  border-bottom: 1px solid;
+  margin-right: 3px;
+}
+
+.breadcrumb span:hover {
+  color: crimson;
+}
+
+/*-- ========== /breadcrumb ========== --*/
+
+/*-- ========== /header ========== --*/
+
+/*-- ========== main ========== --*/
+
+main {
+  margin-bottom: 20px;
+}
+
+main .container {
+  display: flex;
+}
+
+/*-- ========== sidebar ========== --*/
+
+.sidebar {
+  width: 260px;
+  margin-right: 20px;
+}
+
+.general-side, .aesthetic-side {
+  border: solid turquoise 0.5px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+
+.general-side {
+  margin-bottom: 20px;
+}
+
+.sidebar p {
+  background: linear-gradient(to right,	rgba(70,210,190,0.7),mediumTurquoise);
+  color: white;
+  font-weight: bold;
+  padding: 12px 0 12px 15px;
+  font-size: 16px;
+}
+
+.general-list, .aesthetic-list {
+  padding: 0 12px 20px 12px;
+  background-color: white;
+}
+
+.sidebar li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 25px;
+  line-height: 3;
+  border-bottom: solid mediumTurquoise 1px;
+}
+
+.sidebar a {
+  color: dimGray;
+  font-weight: bold;
+  font-size: 14px;
+  display: block;
+}
+
+.sidebar li:before {
+  content: "◇";
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  color: mediumTurquoise;
+  font-size: 13px;
+}
+
+.general-list a:hover {
+  color: mediumTurquoise;
+}
+
+.aesthetic-list a:hover {
+  color: yellowGreen;
+}
+
+/*-- ========== /sidebar ========== --*/
+
+/*-- ========== maincontent ========== --*/
+
+.maincontent {
+  width: 640px;
+}
+
+/*-- ========== maincontent-home ========== --*/
+
+.maincontent-img {
+  margin-bottom: 7px;
+  width: 640px;
+}
+
+.new-information {
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+}
+
+.information-title {
+  padding: 35px 0 15px 0;
+  margin: 0 20px 25px 20px;
+  color: dimgray;
+  border-bottom: mediumTurquoise solid 3px;
+}
+
+.contents {
+  padding: 0 30px 35px 30px;
+}
+
+.content {
+  display: flex;
+  padding: 0 10px 10px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed silver;
+}
+
+.content-date {
+  font-size: 13px;
+  font-weight: bold;
+  flex-shrink: 0;
+  color: dimGray;
+  margin-right: 30px;
+  line-height: 1.5;
+}
+
+.content-information {
+  font-size: 13px;
+  line-height: 1.5;
+  color: dimGray;
+}
+
+/*-- ========== /maincontent-home ========== --*/
+
+/*-- ========== maincontent-common ========== --*/
+
+.maincontent-title h2 {
+  font-size: 20px;
+  padding: 45px 0 36px 20px;
+  background: linear-gradient(powderBlue,mediumTurquoise);
+  border-radius: 5px 5px 0 0;
+  color: white;
+  border: solid turquoise 0.5px;
+}
+
+.maincontent-wrapper {
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  border-radius: 0 0 5px 5px;
+}
+
+.maincontent-wrapper h3 {
+  font-size: 16px;
+  color: dimGray;
+  padding: 35px 0 15px 0;
+  border-bottom: mediumTurquoise 3px solid;
+}
+
+.maincontent-wrapper h4 {
+  color: mediumTurquoise;
+  font-size: 15px;
+}
+
+.maincontent-wrapper p {
+  color: dimGray;
+  font-size: 13px;
+}
+
+/*-- ========== /maincontent-common ========== --*/
+
+/*-- ========== maincontent-clinic ========== --*/
+
+.medicalconcept h4 {
+  margin: 44px 0 20px 0;
+}
+
+.medicalconcept-article {
+  padding: 0 15px 0 10px;
+}
+
+.medicalconcept p {
+  line-height: 23px;
+  margin-bottom: 13px;
+}
+
+.medicalconcept p:last-child {
+  margin-bottom: 0px;
+}
+
+.medicalInformation h3 {
+  margin-bottom: 17px;
+}
+
+.medicalInformation-table {
+  margin-bottom: 20px;
+}
+
+.medicalInformation table {
+  border-collapse: collapse;
+  text-align: center;
+  color: #444;
+  width: 100%;
+  font-size: 13px;
+}
+
+.medicalInformation tr:first-child {
+  background-color: lightGrey;
+}
+
+.medicalInformation th,td {
+  border: 0.1px solid dimGray;
+  padding: 15px 0px;
+}
+
+.medicalInformation th {
+  font-weight: 600;
+}
+
+.medicalInformation tr :nth-child(1) {
+  width: 18%;
+}
+
+.medicalInformation tr :nth-child(4) {
+  width: 28%;
+}
+
+.medicalInformation span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.medicalInformation p {
+  line-height: 23px;
+  margin-bottom: 15px;
+}
+
+.medicalInformation p:nth-child(3), .medicalInformation p:nth-child(5) {
+  margin-bottom: 0px;
+}
+
+/*-- ========== /maincontent-clinic ========== --*/
+
+/*-- ========== maincontent-service ========== --*/
+
+.general h4, .aesthetic h4 {
+  margin: 17px 0 19px 0;
+  line-height: 27px;
+}
+
+.general p, .aesthetic p {
+  line-height: 23px;
+}
+
+.general-set:last-child {
+  margin-bottom: 35px;
+}
+
+.aesthetic-set:last-child {
+  margin-bottom: 15px;
+}
+
+/*-- ========== /maincontent-service ========== --*/
+
+/*-- ========== maincontent-staff ========== --*/
+
+.director h3, .staff h3 {
+  margin-bottom: 15px;
+}
+
+.director-introduction {
+  display: flex;
+  padding-bottom: 25px;
+}
+
+.director-photo {
+  margin-right: 20px;
+}
+
+.director-photo p:first-child {
+  margin-bottom: 15px;
+}
+
+.director-photo p:last-child {
+  text-align: center;
+  color: white;
+  background-color: mediumTurquoise;
+  line-height: 23px;
+}
+
+.director-article h4 {
+  margin: 20px 0;
+}
+
+.director-sentence p {
+  line-height: 23px;
+}
+
+.director-greeting p:nth-child(1), .director-greeting p:nth-child(4) {
+  margin-bottom: 12px;
+}
+
+.staff-article p {
+  margin-bottom: 23px;
+}
+
+.staff-sentence p {
+  margin-bottom: 11px;
+}
+
+.staff-sentence p:last-child {
+  margin-bottom: 20px;
+}
+
+/*-- ========== /maincontent-staff ========== --*/
+
+/*-- ========== maincontent-access ========== --*/
+
+.access {
+  border-bottom: mediumTurquoise 4px solid;
+}
+
+.access iframe {
+  width: 600px;
+  height: 350px;
+  margin: 15px 0 5px 0;
+}
+
+.access p {
+  margin-bottom: 10px;
+}
+
+.access a {
+  font-size: 11px;
+  color: blue;
+  text-decoration: underline;
+}
+
+.address {
+  display: flex;
+  padding: 7px 0;
+}
+
+.address-photo {
+  margin-right: 20px;
+}
+
+.address-sentence h4 {
+  padding: 20px 0;
+}
+
+.address-sentence p {
+  line-height: 23px;
+}
+
+.address-sentence p:nth-child(2) {
+  margin-bottom: 14px;
+}
+
+/*-- ========== /maincontent-access ========== --*/
+
+/*-- ========== /maincontent ========== --*/
+
+/*-- ========== /main ========== --*/
+
+/*-- ========== footer ========== --*/
+
+.footer-navi {
+  background-color: mediumTurquoise;
+  border-radius: 5px;
+  padding: 6px 0 8px 0;
+}
+
+.footer-navi ul {
+  display: flex;
+}
+
+.footer-navi li {
+  list-style: none;
+  padding-left: 45px;
+  background: url(../images/circle.png) no-repeat top -6px left 15px;
+  background-size: 32px;
+}
+
+.footer-navi li:first-child {
+  padding-left: 40px;
+  background-position: top -6px left 13px;
+}
+
+.footer-navi a {
+  font-size: 13px;
+  color: white;
+}
+
+.footer-navi a:hover {
+  border-bottom: solid 1px;
+}
+
+.company-information {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0;
+  border-bottom: solid 2px mediumturquoise;
+}
+
+.company-information p {
+  font-size: 13px;
+  color: dimGray;
+}
+
+.company-information span {
+  font-weight: bold;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0 20px 0;
+  color: dimGray;
+}
+
+.copyright p {
+  font-size: 12px;
+}
+
+/*-- ========== /footer ========== --*/
