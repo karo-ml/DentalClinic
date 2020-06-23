@@ -530,7 +530,7 @@ main .container {
 .footer-navi li {
   list-style: none;
   padding-left: 45px;
-  background: url(../images/circle.png) no-repeat top -6px left 15px;
+  background: url(circle.png) no-repeat top -6px left 15px;
   background-size: 32px;
 }
 
