@@ -49,10 +49,7 @@ a {
 }
 
 .tel {
-  margin-bottom: 10px;
-}
-
-.tel p {
+  margin-bottom: 12px;
   font-size: 25px;
 }
 
@@ -61,10 +58,10 @@ a {
   transform:rotateZ(0.95turn);
 }
 
-.tel-time p {
+.tel-time {
   font-size: 10px;
   border: solid 1px darkGray;
-  padding: 10px 20px;
+  padding: 9px 20px;
 }
 
 .tel-time span {
