@@ -1,0 +1,133 @@
+@media only screen and (max-width:768px) {
+
+  .container {
+    width: 100%;
+  }
+
+  .header-top {
+    flex-direction: column;
+    width: 250px;
+    margin: 0 auto 12px auto;
+  }
+
+  .header-left {
+    padding: 0;
+  }
+
+  .header-right {
+    text-align: center;
+  }
+
+  .clinic-title {
+    margin: 0 0 15px 0;
+  }
+
+  .tel-time {
+    padding: 9px 20px;
+    display: inline-block;
+  }
+
+  .header-navi ul {
+    flex-wrap: wrap;
+  }
+
+  .header-navi li {
+    margin: 0;
+    flex: 0 1 50%;
+    border-radius: 5px;
+  }
+
+  main .container {
+    flex-direction: column;
+    margin: 0 15px;
+  }
+
+  .sidebar {
+    order: 2;
+    width: 100%;
+  }
+
+  .maincontent {
+    order: 1;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .maincontent-title h2 {
+    padding: 20px 0 20px 25px;
+  }
+
+  .maincontent-img img {
+    display: block;
+    max-width: 640px;
+    width: 100%;
+    height: auto;
+  }
+
+  .contents {
+    padding-left: 20px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .content-date {
+    margin-bottom: 20px;
+  }
+
+  .content-information {
+    padding-left: 10px;
+  }
+
+  .director-introduction {
+    flex-direction: column;
+  }
+
+  .director-photo p {
+    text-align: center;
+  }
+
+  .staff-article img {
+    width: 100%;
+    height: auto;
+  }
+
+  .access-map iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .address {
+    flex-direction: column;
+  }
+
+  .address-photo p {
+    text-align: center;
+  }
+
+  .footer-navi {
+    margin: 0 15px;
+  }
+
+  .footer-navi ul {
+    flex-wrap: wrap;
+  }
+
+  .company-information {
+    padding-bottom: 5px;
+  }
+
+  .company-information p {
+    margin: 0 15px;
+  }
+
+  .company-information span:nth-child(2) {
+    line-height: 35px;
+  }
+
+  .company-information span::after {
+    content: "\A" ;
+    white-space: pre ;
+  }
+}
