@@ -4,6 +4,8 @@
     width: 100%;
   }
 
+  /*-- ========== header ========== --*/
+
   .header-top {
     flex-direction: column;
     width: 250px;
@@ -37,9 +39,14 @@
     border-radius: 5px;
   }
 
+  /*-- ========== header ========== --*/
+
+  /*-- ========== main ========== --*/
+
   main .container {
     flex-direction: column;
-    margin: 0 15px;
+    margin: 0 12px;
+    width: auto;
   }
 
   .sidebar {
@@ -56,6 +63,8 @@
   .maincontent-title h2 {
     padding: 20px 0 20px 25px;
   }
+
+  /*-- ========== maincontent-home ========== --*/
 
   .maincontent-img img {
     display: block;
@@ -80,8 +89,16 @@
     padding-left: 10px;
   }
 
+  /*-- ========== /maincontent-home ========== --*/
+
+  /*-- ========== maincontent-staff ========== --*/
+
   .director-introduction {
     flex-direction: column;
+  }
+
+  .director-photo {
+    margin-right: 0;
   }
 
   .director-photo p {
@@ -93,9 +110,23 @@
     height: auto;
   }
 
-  .access-map iframe {
+  /*-- ========== /maincontent-staff ========== --*/
+
+  /*-- ========== maincontent-access ========== --*/
+
+  .gmap {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+  }
+
+  .gmap iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
     width: 100%;
-    height: auto;
   }
 
   .address {
@@ -106,8 +137,14 @@
     text-align: center;
   }
 
+  /*-- ========== /maincontent-access ========== --*/
+
+  /*-- ========== /main ========== --*/
+
+  /*-- ========== footer ========== --*/
+
   .footer-navi {
-    margin: 0 15px;
+    margin: 0 12px;
   }
 
   .footer-navi ul {
@@ -119,7 +156,7 @@
   }
 
   .company-information p {
-    margin: 0 15px;
+    margin: 0 12px;
   }
 
   .company-information span:nth-child(2) {
@@ -130,4 +167,6 @@
     content: "\A" ;
     white-space: pre ;
   }
+
+  /*-- ========== /footer ========== --*/
 }
