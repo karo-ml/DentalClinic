@@ -525,7 +525,7 @@ main .container {
 .footer-navi li {
   list-style: none;
   padding-left: 42px;
-  background: url(../images/circle.png) no-repeat top -3px left 10px;
+  background: url(circle.png) no-repeat top -3px left 10px;
   background-size: 32px;
 }
 
