@@ -34,8 +34,11 @@
   }
 
   .header-navi li {
-    margin: 0;
     flex: 0 1 50%;
+    border-radius: 5px;
+  }
+
+  .header-navi li:first-child, .header-navi li:last-child {
     border-radius: 5px;
   }
 
@@ -97,15 +100,12 @@
     flex-direction: column;
   }
 
-  .director-photo {
+  .director-left {
     margin-right: 0;
-  }
-
-  .director-photo p {
     text-align: center;
   }
 
-  .staff-article img {
+  .staff img {
     width: 100%;
     height: auto;
   }
@@ -149,6 +149,7 @@
 
   .footer-navi ul {
     flex-wrap: wrap;
+    padding-right: 20px;
   }
 
   .company-information {
