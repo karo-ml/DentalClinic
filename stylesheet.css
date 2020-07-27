@@ -72,18 +72,26 @@ a {
   list-style: none;
   flex: 1 1 20%;
   text-align: center;
-  margin-right: 0.1px;
   overflow: hidden;
   border: solid turquoise 1px;
+  border-right: #71C9C7 solid 1.2px;
+  border-left: #99E1DF solid 1px;
   background: linear-gradient(powderBlue,mediumTurquoise);
+}
+
+.header-navi li:first-child {
+  border-left: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.header-navi li:last-child {
+  border-right: none;
+  border-radius: 0 5px 5px 0;
 }
 
 .header-navi a {
   display: block;
   padding: 20px 0;
-}
-
-.header-navi p {
   color: white;
   font-weight: bold;
 }
@@ -97,27 +105,19 @@ a {
   font-size: 10px;
 }
 
-.header-navi li:first-child {
-  border-radius: 5px 0 0 5px;
-}
-
-.header-navi li:last-child {
-  border-radius: 0 5px 5px 0;
-}
-
 .header-navi a:hover {
   background: linear-gradient(mediumTurquoise,powderBlue);
   opacity: 0.7;
 }
 
 .toppage-margin {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 /*-- ========== breadcrumb ========== --*/
 
 .breadcrumb {
-  margin: 15px 0;
+  padding: 15px 0;
 }
 
 .breadcrumb ol {
@@ -139,10 +139,13 @@ a {
   content: none;
 }
 
+.breadcrumb a {
+  margin-right: 3px;
+}
+
 .breadcrumb span {
   color: royalBlue;
   border-bottom: 1px solid;
-  margin-right: 3px;
 }
 
 .breadcrumb span:hover {
@@ -155,19 +158,16 @@ a {
 
 /*-- ========== main ========== --*/
 
-main {
-  margin-bottom: 20px;
-}
-
 main .container {
   display: flex;
+  padding-bottom: 20px;
+  justify-content: space-between;
 }
 
 /*-- ========== sidebar ========== --*/
 
 .sidebar {
   width: 260px;
-  margin-right: 20px;
 }
 
 .general-side, .aesthetic-side {
@@ -244,7 +244,7 @@ main .container {
   border-radius: 0 0 5px 5px;
 }
 
-.information-title {
+.new-information h3 {
   padding: 35px 0 15px 0;
   margin: 0 20px 25px 20px;
   color: dimgray;
@@ -260,28 +260,22 @@ main .container {
   padding: 0 10px 10px 0;
   margin-bottom: 10px;
   border-bottom: 1px dashed silver;
+  color: dimGray;
+  font-size: 13px;
+  line-height: 1.5;
 }
 
 .content-date {
-  font-size: 13px;
   font-weight: bold;
   flex-shrink: 0;
-  color: dimGray;
   margin-right: 30px;
-  line-height: 1.5;
-}
-
-.content-information {
-  font-size: 13px;
-  line-height: 1.5;
-  color: dimGray;
 }
 
 /*-- ========== /maincontent-home ========== --*/
 
 /*-- ========== maincontent-common ========== --*/
 
-.maincontent-title h2 {
+.maincontent-title {
   font-size: 20px;
   padding: 45px 0 36px 20px;
   background: linear-gradient(powderBlue,mediumTurquoise);
@@ -317,12 +311,12 @@ main .container {
 
 /*-- ========== maincontent-clinic ========== --*/
 
-.medicalconcept h4 {
-  margin: 44px 0 20px 0;
-}
-
 .medicalconcept-article {
   padding: 0 15px 0 10px;
+}
+
+.medicalconcept h4 {
+  margin: 44px 0 20px 0;
 }
 
 .medicalconcept p {
@@ -334,12 +328,8 @@ main .container {
   margin-bottom: 0px;
 }
 
-.medicalInformation h3 {
-  margin-bottom: 17px;
-}
-
 .medicalInformation-table {
-  margin-bottom: 20px;
+  padding: 17px 0 20px 0;
 }
 
 .medicalInformation table {
@@ -381,7 +371,7 @@ main .container {
   margin-bottom: 15px;
 }
 
-.medicalInformation p:nth-child(3), .medicalInformation p:nth-child(5) {
+.medicalInformation-sentence .medicalInformation-margin {
   margin-bottom: 0px;
 }
 
@@ -389,21 +379,21 @@ main .container {
 
 /*-- ========== maincontent-service ========== --*/
 
+.general {
+  padding-bottom: 35px;
+}
+
+.aesthetic {
+  padding-bottom: 15px;
+}
+
 .general h4, .aesthetic h4 {
-  margin: 17px 0 19px 0;
+  padding: 17px 0 19px 0;
   line-height: 27px;
 }
 
 .general p, .aesthetic p {
   line-height: 23px;
-}
-
-.general-set:last-child {
-  margin-bottom: 35px;
-}
-
-.aesthetic-set:last-child {
-  margin-bottom: 15px;
 }
 
 /*-- ========== /maincontent-service ========== --*/
@@ -414,48 +404,47 @@ main .container {
   margin-bottom: 15px;
 }
 
+.director h4 {
+  margin: 20px 0;
+}
+
+.director p {
+  line-height: 23px;
+}
+
 .director-introduction {
   display: flex;
   padding-bottom: 25px;
 }
 
-.director-photo {
+.director-left {
   margin-right: 20px;
 }
 
-.director-photo p:first-child {
+.director-photo {
   margin-bottom: 15px;
 }
 
-.director-photo p:last-child {
+.director-left .director-name {
   text-align: center;
   color: white;
   background-color: mediumTurquoise;
-  line-height: 23px;
 }
 
-.director-article h4 {
-  margin: 20px 0;
-}
-
-.director-sentence p {
-  line-height: 23px;
-}
-
-.director-greeting p:nth-child(1), .director-greeting p:nth-child(4) {
+.greeting-margin {
   margin-bottom: 12px;
 }
 
-.staff-article p {
+.staff-photo {
   margin-bottom: 23px;
+}
+
+.staff-sentence {
+  margin-bottom: 20px;
 }
 
 .staff-sentence p {
   margin-bottom: 11px;
-}
-
-.staff-sentence p:last-child {
-  margin-bottom: 20px;
 }
 
 /*-- ========== /maincontent-staff ========== --*/
@@ -491,7 +480,7 @@ main .container {
   margin-right: 20px;
 }
 
-.address-sentence h4 {
+.address h4 {
   padding: 20px 0;
 }
 
@@ -499,7 +488,7 @@ main .container {
   line-height: 23px;
 }
 
-.address-sentence p:nth-child(2) {
+.address-margin {
   margin-bottom: 14px;
 }
 
@@ -514,8 +503,7 @@ main .container {
 .footer-navi {
   background-color: mediumTurquoise;
   border-radius: 5px;
-  padding: 2px 20px 2px 0;
-  line-height: 25px;
+  line-height: 27px;
 }
 
 .footer-navi ul {
@@ -525,7 +513,7 @@ main .container {
 .footer-navi li {
   list-style: none;
   padding-left: 42px;
-  background: url(circle.png) no-repeat top -3px left 10px;
+  background: url(../images/circle.png) no-repeat top -2px left 10px;
   background-size: 32px;
 }
 
@@ -542,9 +530,6 @@ main .container {
   text-align: right;
   padding: 20px 0;
   border-bottom: solid 2px mediumturquoise;
-}
-
-.company-information p {
   font-size: 13px;
   color: dimGray;
 }
@@ -557,11 +542,8 @@ main .container {
   display: flex;
   justify-content: center;
   padding: 15px 0 20px 0;
-  color: dimGray;
-}
-
-.copyright p {
   font-size: 12px;
+  color: dimGray;
 }
 
 /*-- ========== /footer ========== --*/
